@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface MMViewController : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *mapview;
 - (IBAction)func:(id)sender;
+@property (strong, nonatomic) IBOutlet CLLocationManager *LocationManager;
 
 @end

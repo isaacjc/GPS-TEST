@@ -38,17 +38,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="LocationManager" destination="JN0-hq-mVQ" id="MHh-ZK-mue"/>
                         <outlet property="mapview" destination="QOw-zd-9Vl" id="SI6-OS-dem"/>
                     </connections>
                 </viewController>
+                <customObject id="JN0-hq-mVQ" customClass="CLLocationManager"/>
             </objects>
         </scene>
     </scenes>
     <classes>
+        <class className="CLLocationManager" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CLLocationManager.h"/>
+        </class>
         <class className="MMViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MMViewController.h"/>
             <relationships>
                 <relationship kind="action" name="func:"/>
+                <relationship kind="outlet" name="LocationManager" candidateClass="CLLocationManager"/>
                 <relationship kind="outlet" name="mapview" candidateClass="MKMapView"/>
             </relationships>
         </class>

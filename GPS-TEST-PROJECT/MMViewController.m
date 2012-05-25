@@ -13,6 +13,7 @@
 @end
 
 @implementation MMViewController
+@synthesize LocationManager;
 @synthesize mapview;
 
 - (void)viewDidLoad
@@ -24,6 +25,7 @@
 - (void)viewDidUnload
 {
     [self setMapview:nil];
+    [self setLocationManager:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -33,6 +35,22 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (IBAction)func:(id)sender {
+- (IBAction)MyLocation:(id)sender {
+    LocationManager = [[CLLocationManager alloc] init];
+    LocationManager.distanceFilter = kCLDistanceFilterNone;
+    LocationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    [LocationManager startUpdatingLocation];
+    
+    [mapview setMapType:MKMapTypeStandard];
+    [mapview setZoomEnabled:YES];
+    [mapview setScrollEnabled:YES];
+    MKCoordinateRegion region = { {0.0, 0.0}, {0.0, 0.0} };
+    region.center.latitude = LocationManager.location.coordinate.latitude;
+    region.center.longitude = LocationManager.location.coordinate.longitude;
+    region.span.latitudeDelta = 0.007f;
+    region.span.longitudeDelta = 0.007f;
+    [mapview setRegion:region animated:YES];
+    [mapview setDelegate:sender];
+    
 }
 @end
