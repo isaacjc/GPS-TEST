@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MMViewController : UIViewController
+@property (weak, nonatomic) IBOutlet MKMapView *mapview;
+- (IBAction)func:(id)sender;
 
 @end

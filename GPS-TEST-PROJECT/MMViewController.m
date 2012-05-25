@@ -13,6 +13,7 @@
 @end
 
 @implementation MMViewController
+@synthesize mapview;
 
 - (void)viewDidLoad
 {
@@ -22,6 +23,7 @@
 
 - (void)viewDidUnload
 {
+    [self setMapview:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -31,4 +33,6 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)func:(id)sender {
+}
 @end
