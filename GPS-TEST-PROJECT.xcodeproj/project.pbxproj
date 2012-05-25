@@ -22,14 +22,14 @@
 		50F0D8DB156F91610017B3CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50F0D8DD156F91610017B3CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50F0D8DF156F91610017B3CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		50F0D8E3156F91610017B3CC /* GPS-TEST-PROJECT-Info.plist */ = {isa = PBXFileReference; path = "GPS-TEST-PROJECT-Info.plist"; sourceTree = "<group>"; };
+		50F0D8E3156F91610017B3CC /* GPS-TEST-PROJECT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPS-TEST-PROJECT-Info.plist"; sourceTree = "<group>"; };
 		50F0D8E5156F91610017B3CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50F0D8E7156F91610017B3CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		50F0D8E9156F91610017B3CC /* GPS-TEST-PROJECT-Prefix.pch */ = {isa = PBXFileReference; path = "GPS-TEST-PROJECT-Prefix.pch"; sourceTree = "<group>"; };
-		50F0D8EA156F91610017B3CC /* MMAppDelegate.h */ = {isa = PBXFileReference; path = MMAppDelegate.h; sourceTree = "<group>"; };
+		50F0D8E9156F91610017B3CC /* GPS-TEST-PROJECT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPS-TEST-PROJECT-Prefix.pch"; sourceTree = "<group>"; };
+		50F0D8EA156F91610017B3CC /* MMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
 		50F0D8EB156F91610017B3CC /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
 		50F0D8EE156F91610017B3CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		50F0D8F0156F91610017B3CC /* MMViewController.h */ = {isa = PBXFileReference; path = MMViewController.h; sourceTree = "<group>"; };
+		50F0D8F0156F91610017B3CC /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
 		50F0D8F1156F91610017B3CC /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
