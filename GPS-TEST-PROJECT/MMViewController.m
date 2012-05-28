@@ -19,6 +19,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    LocationManager = [[CLLocationManager alloc] init];
+    LocationManager.distanceFilter = kCLDistanceFilterNone;
+    LocationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    [LocationManager startUpdatingLocation];
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -35,11 +40,7 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (IBAction)MyLocation:(id)sender {
-    LocationManager = [[CLLocationManager alloc] init];
-    LocationManager.distanceFilter = kCLDistanceFilterNone;
-    LocationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
-    [LocationManager startUpdatingLocation];
+- (IBAction)func:(id)sender {
     
     [mapview setMapType:MKMapTypeStandard];
     [mapview setZoomEnabled:YES];
@@ -50,7 +51,5 @@
     region.span.latitudeDelta = 0.007f;
     region.span.longitudeDelta = 0.007f;
     [mapview setRegion:region animated:YES];
-    [mapview setDelegate:sender];
-    
 }
 @end

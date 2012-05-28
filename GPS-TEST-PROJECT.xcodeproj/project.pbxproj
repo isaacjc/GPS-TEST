@@ -56,8 +56,6 @@
 		50F0D8CC156F91610017B3CC = {
 			isa = PBXGroup;
 			children = (
-				50F0D8FA156F93D60017B3CC /* CoreLocation.framework */,
-				50F0D8F8156F93C70017B3CC /* MapKit.framework */,
 				50F0D8E1156F91610017B3CC /* GPS-TEST-PROJECT */,
 				50F0D8DA156F91610017B3CC /* Frameworks */,
 				50F0D8D8156F91610017B3CC /* Products */,
@@ -75,6 +73,8 @@
 		50F0D8DA156F91610017B3CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50F0D8FA156F93D60017B3CC /* CoreLocation.framework */,
+				50F0D8F8156F93C70017B3CC /* MapKit.framework */,
 				50F0D8DB156F91610017B3CC /* UIKit.framework */,
 				50F0D8DD156F91610017B3CC /* Foundation.framework */,
 				50F0D8DF156F91610017B3CC /* CoreGraphics.framework */,
@@ -283,6 +283,7 @@
 				50F0D8F7156F91610017B3CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
